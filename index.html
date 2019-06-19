@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+	    display: flex;
+	    justify-content: center;
+	    padding-top: 50px;
+	}
+    
+        .card{
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	    padding: 10px;
+	    border-radius: 5px;
+	    width: 255px;
+	    border: 1px solid #dfe1e5;
+	}
+    
+        input{
+	    border: 1px solid #dfe1e5;
+	    border-radius: 5px;
+	    margin-bottom: 5px;
+	    text-align: right;
+	}
+    
+        .button{
+	    background: #e8eaeb;
+	    height: 40px;
+	    width: 40px;
+	    border-radius: 5px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    cursor: pointer;
+	    user-select: none;
+	    margin: 5px 25px;
+	}
+	
+	.button:hover{
+	    background: #dfe1e5;
+	}
+	
+	.equality, .equality:hover{
+	    background: #4285f4;
+	    color: #fff;
+	}
+	
+	.row{
+	    display: flex;
+	    align-items: center;
+	    width: 200px;
+	}
+    </style>
+</head>
+<body>
+<div class="card">
+<input id="text-field" type='text'/>
+<div class="row">
+    <div class="button" id="plus-button">+</div>
+    <div class="button" id="minus-button">-</div>
+</div>
+<div class="row">
+    <div class="button" id="mul-button">*</div>
+    <div class="button" id="div-button">/</div>
+</div>
+<div class="row">
+    <div class="button equality" id="output">=</div>
+<div>
+</div>
+<script src="src/index.js"></script>
+</body>
+</html>
